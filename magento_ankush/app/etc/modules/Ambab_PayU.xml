@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<config>
+  <modules>
+    <Ambab_PayU>
+      <active>true</active>
+      <codePool>local</codePool>
+       
+      <depends>
+        <Mage_Payment />
+      </depends>
+    </Ambab_PayU>
+  </modules>
+</config>

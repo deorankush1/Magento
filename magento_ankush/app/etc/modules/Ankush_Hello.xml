@@ -1,0 +1,8 @@
+<config>
+	<modules>
+		<Ankush_Hello>
+			<active>true</active>
+			<codePool>local</codePool>
+		</Ankush_Hello>
+	</modules>
+</config>

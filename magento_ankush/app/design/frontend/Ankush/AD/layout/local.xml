@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+
+	<checkout_cart_index>
+  	  <remove name="checkout.cart.shipping" />
+    </checkout_cart_index>
+    
+    <default>
+	 	<reference name="top.links"> 
+	   	  <action method="removeLinkByUrl">
+	       	<url helper="checkout/url/getCartUrl" />
+	      </action> 
+  		</reference>
+	</default>
+
+
+	<default>
+ 		<reference name="top.links">
+    		<block type="wishlist/links" name="wishlist_link"/>
+    		<action method="removeLinkBlock"><blockName>wishlist_link</blockName></action>
+ 		</reference> 
+	</default>
+
+
+
+
+<!--   <reference name="right">
+    <block type="core/text_list" name="top.menu" as="topMenu" translate="label">
+    <label>Navigation Bar</label>
+    <block type="page/html_topmenu" name="catalog.topnav" template="page/html/topmenu.phtml">
+    <block type="page/html_topmenu_renderer" name="catalog.topnav.renderer" template="page/html/topmenu/renderer.phtml"/>
+    </block>
+  </block>
+  </reference> -->
+
+   <!--  <default>
+
+        <!-- Mage_Poll -->
+      <!--   <reference name="right">
+            <block type="poll/activePoll" name="right.poll">
+                <action method="setPollTemplate"><template>poll/inactive.phtml</template><type>poll</type></action>
+                <action method="setPollTemplate"><template>poll/result.phtml</template><type>results</type></action>
+            </block>
+        </reference>
+
+    </default> -->
+</layout>
